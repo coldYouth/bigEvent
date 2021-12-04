@@ -1,0 +1,62 @@
+//out:../css/
+html {
+    height: 100%;
+    width: 100%;
+    
+body {
+    padding: 0;
+    margin: 0;  
+    background: url(../images/login_bg.jpg) no-repeat center/cover;
+
+    //登陆注册框
+    .loginReg-box {
+        position: absolute;
+        width: 400px;
+        height: 310px;
+        padding: 0 20px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+       background-color: #fff;
+
+       .title-box {
+        height: 60px;
+        background: url('../images/login_title.png') no-repeat center;
+      }
+
+        //登陆表单
+      .login-box {
+          display:block;
+        } 
+        
+        //注册表单
+        .reg-box {
+        display: none;
+        }
+
+        .layui-form-item {
+            position: relative;
+            
+            .layui-icon {
+                position: absolute;
+                font-size: 20px;
+                top: 7px;
+                left: 9px;
+            }
+
+            .layui-input {
+                padding-left: 36px;
+            }
+        }
+        
+        //登陆或注册链接
+        a {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+   
+    }
+
+}
+}
