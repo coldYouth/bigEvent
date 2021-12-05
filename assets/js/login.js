@@ -25,11 +25,6 @@ $(function () {
         }
     })
 
-    //在每次提交ajax前拼接url地址
-    $.ajaxPrefilter(function (options) {
-        options.url = 'http://api-breakingnews-web.itheima.net' + options.url;
-    })
-
     //监听注册表单的提交事件
     $("#form_reg").on("submit", function (e) {
         e.preventDefault();
